@@ -12,7 +12,8 @@ class Actuador {
 public:
     explicit Actuador(uint8_t pin, bool activoEnAlto = true);
 
-    void begin();                          // configura el pin (llamar en setup)
+    void setIndicador(uint8_t pinLed);     // LED que refleja el estado (llamar ANTES de begin)
+    void begin();                          // configura los pines (llamar en setup)
     void encender();
     void apagar();
     void alternar();
@@ -28,6 +29,7 @@ private:
 
     uint8_t pin;
     bool activoEnAlto;
+    int pinIndicador;                      // -1 si no hay LED indicador
     bool encendido;
     Temporizador temporizador;             // one-shot para el apagado automatico
 };

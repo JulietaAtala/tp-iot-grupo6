@@ -7,6 +7,7 @@ Potenciometro::Potenciometro(uint8_t pin, float umbralV, float histeresisV, floa
 void Potenciometro::begin() {
     pinMode(pin, INPUT);
     analogReadResolution(RESOLUCION_BITS);   // 12 bits: 0 a 4095
+    update();                                // primera lectura real: voltaje() no devuelve 0 por defecto
 }
 
 void Potenciometro::update() {
