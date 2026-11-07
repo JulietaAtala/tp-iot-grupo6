@@ -30,14 +30,14 @@
     [ "esp:GND.3", "led1:C", "black", [ "h9.6", "h114.8" ] ],
     [ "esp:23", "led1:A", "green", [ "h0" ] ],
     [ "dht1:GND", "esp:GND.1", "black", [ "h48", "v-9.6" ] ],
-    [ "esp:5V", "dht1:VCC", "red", [ "v-9.6", "h-115.05" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v-9.6", "h-115.05" ] ],
     [ "esp:33", "dht1:SDA", "green", [ "h-19.05", "v86.4", "h-86.5" ] ],
-    [ "esp:5V", "oled1:VCC", "red", [ "h-47.85", "v57.6", "h172.65" ] ],
+    [ "esp:3V3", "oled1:VCC", "red", [ "h-47.85", "v57.6", "h172.65" ] ],
     [ "esp:GND.1", "oled1:GND", "black", [ "h-9.45", "v86.4", "h124.8" ] ],
     [ "esp:21", "oled1:SDA", "magenta", [ "h0" ] ],
     [ "esp:22", "oled1:SCL", "yellow", [ "h0" ] ],
     [ "esp:GND.1", "pot1:GND", "black", [ "v-9.6", "h-57.45", "v-134.4", "h-57.6" ] ],
-    [ "esp:5V", "pot1:VCC", "red", [ "h-182.25", "v-201.6", "h87.2" ] ],
+    [ "esp:3V3", "pot1:VCC", "red", [ "h-182.25", "v-201.6", "h87.2" ] ],
     [ "esp:32", "pot1:SIG", "green", [ "h-19.05", "v-86.4", "h-86" ] ]
   ],
   "dependencies": {}
